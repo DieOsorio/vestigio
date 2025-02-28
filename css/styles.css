@@ -181,6 +181,9 @@
     z-index: 50;
   }
 
+  .icon-link:hover {
+    background-color: transparent;
+  }
 
   .icon-link.ig {
     bottom: 7.5vh;
