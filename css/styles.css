@@ -172,8 +172,8 @@
   }
 
  .icon-link {
-    height: 39px;
-    width: 39px;
+    height: 40px;
+    width: 40px;
     padding: 0;
     border-radius: 50%;
     position: absolute;
@@ -181,9 +181,6 @@
     z-index: 50;
   }
 
-  .icon-link:hover {
-    background-color: #0f080460;
-  }
 
   .icon-link.ig {
     bottom: 7.5vh;
