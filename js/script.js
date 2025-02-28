@@ -106,43 +106,51 @@ backToTopBtn.addEventListener("click", () => {
 // button para extender la info de los muebles
 
 document.addEventListener("DOMContentLoaded", function () {
-  function handleToggle() {
-      const info = this.previousElementSibling; // Encuentra el <p> anterior al botón
-      const isOpen = info.style.maxHeight && info.style.maxHeight !== "0px";
+    function handleToggle(event) {
+        event.preventDefault(); // Evita problemas con `touchstart`
+        
+        const info = this.previousElementSibling; // Encuentra el <p> anterior al botón
+        const isOpen = info.style.maxHeight && info.style.maxHeight !== "0px";
 
-      if (isOpen) {
-          info.style.maxHeight = "0px";
-          this.innerHTML = "▼"; // Ícono de contraer
-      } else {
-          info.style.maxHeight = info.scrollHeight + "px";
-          this.innerHTML = "▲"; // Ícono de expandir
-      }
-  }
+        if (isOpen) {
+            info.style.maxHeight = "0px";
+            this.innerHTML = "▼"; // Ícono de contraer
+        } else {
+            info.style.maxHeight = info.scrollHeight + "px";
+            this.innerHTML = "▲"; // Ícono de expandir
+        }
+    }
 
-  function applyToggle() {
-      const isMobile = window.innerWidth < 768;
-      document.querySelectorAll(".mueble-info").forEach((info) => {
-          const paragraph = info.querySelector("p");
-          let button = info.querySelector("button");
+function applyToggle() {
+    const isMobile = window.innerWidth < 768;
 
-          if (isMobile) {
-              paragraph.style.maxHeight = "0px"; // Oculta el texto
-              if (!button) {
-                  button = document.createElement("button");
-                  button.innerHTML = "▼";
-                  button.addEventListener("click", handleToggle);
-                  info.appendChild(button);
-              }
-          } else {
-              paragraph.style.maxHeight = "none"; // Siempre visible en pantallas grandes
-              if (button) button.remove(); // Elimina el botón en pantallas grandes
-          }
-      });
-  }
+    document.querySelectorAll(".mueble-info").forEach((info) => {
+        const paragraph = info.querySelector("p");
+        let button = info.querySelector("button");
 
-  // Ejecutar cuando cargue la página y al cambiar el tamaño
-  applyToggle();
-  window.addEventListener("resize", applyToggle);
+        if (isMobile) {
+            paragraph.style.overflow = "hidden"; // Asegura que no se vea el contenido colapsado
+            paragraph.style.transition = "max-height 0.3s ease-in-out"; // Agrega una animación suave
+            
+            if (!button) {
+                button = document.createElement("button");
+                button.innerHTML = "▼";
+                button.addEventListener("click", handleToggle);
+                button.addEventListener("touchstart", handleToggle); // Mejora en móviles
+                info.appendChild(button);
+            }
+            paragraph.style.maxHeight = "0px"; // Oculta el texto solo si está en mobile
+        } else {
+            paragraph.style.maxHeight = "none"; // Siempre visible en pantallas grandes
+            paragraph.style.overflow = "visible"; 
+            if (button) button.remove(); // Elimina el botón en pantallas grandes
+        }
+    });
+}
+
+    // Ejecutar cuando cargue la página y al cambiar el tamaño
+    applyToggle();
+    window.addEventListener("resize", applyToggle);
 });
 
 
