@@ -19,6 +19,10 @@
 
   /* ====== LAYOUT GENERAL ====== */
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     background-color: var(--background-color);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -172,8 +176,8 @@
   }
 
  .icon-link {
-    height: 40px;
-    width: 40px;
+    height: 49px;
+    width: 49px;
     padding: 0;
     border-radius: 50%;
     position: absolute;
@@ -292,11 +296,11 @@
   }
 
   .desktop-text {
-    display: block; 
+    display: block; /* Visible por defecto */
   }
-    
+
   .mobile-text {
-    display: none; 
+    display: none; /* Oculto en desktop */
   }
 
   .muebles-container {
@@ -333,7 +337,7 @@
   .mueble-info  p {
     font-family: "Merriweather", serif;
     font-size: clamp(0.9rem, 1.6vw, 1.1rem);
-    max-height: 0;
+    max-height: none;
     overflow: hidden;
     transition: max-height 0.4s ease-in-out;
   }
@@ -404,17 +408,18 @@
   }
 
   .error-message {
-    color: #ff6b6b; /* Rojo suave */
+    color: var(--selected-b);
     font-size: 0.9rem;
+    font-weight: bold;
     margin-top: 5px;
     display: block;
-    opacity: 0; /* Oculto por defecto */
+    opacity: 0;
     transition: opacity 0.3s ease-in-out;
   }
 
   .input-error {
-      border: 2px solid #ff6b6b !important;
-      background-color: rgba(255, 107, 107, 0.1);
+      border: 2px solid #9a2a2a !important;
+      background-color: #9a2a2a2a;
   }
 
 /* ====== FOOTER ====== */
@@ -779,70 +784,73 @@
     }
 
     .mueble-info p {
-      max-height: 0;
-  }
-
-  .mueble-info button {
-      display: block;
-      background: none;
-      border: none;
-      font-size: 1rem;
-      cursor: pointer;
-      color: #a67c52;
-      margin-top: 5px;
-  }
-
-  .nosotros-text {
-    max-height: 15rem;
-    overflow: hidden;
-    transition: max-height 0.5s ease-in-out;
-  }
-
-  .nosotros-text.expanded {
-    max-height: 150rem;
-  }
-
-
-  #toggleText {
-      display: block;
-      margin-top: 10px;
-      background: none;
-      border: none;
-      color: var(--links);
-      font-size: 1rem;
-      font-weight: bold;
-      cursor: pointer;
-      transition: color 0.3s ease-in-out;
-  }
-
-  #toggleText:hover {
-    color: var(--links-selected);
-  }
-
-
-    /* Form */
-
-    label {
-      font-weight: 0.5em;
-      margin-bottom: 1em;
-    }
-
-    input {
-      max-width: 350px;
-      align-self: center;
-      max-height: 40px;
-    }
-
-    textarea { 
-      max-width: 350px;
-    }
-
-    button {
-      margin: 0 auto;
+      max-height: 0px;
+      overflow: hidden;
+      transition: max-height 0.5s ease-in-out;
     }
 
 
-    /* Footer */
+    .mueble-info button {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 1rem;
+        cursor: pointer;
+        color: #a67c52;
+        margin-top: 5px;
+    }
+
+    .nosotros-text {
+      max-height: 15rem;
+      overflow: hidden;
+      transition: max-height 0.5s ease-in-out;
+    }
+
+    .nosotros-text.expanded {
+      max-height: 150rem;
+    }
+
+
+    #toggleText {
+        display: block;
+        margin-top: 10px;
+        background: none;
+        border: none;
+        color: var(--links);
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: color 0.3s ease-in-out;
+    }
+
+    #toggleText:hover {
+      color: var(--links-selected);
+    }
+
+
+      /* Form */
+
+      label {
+        font-weight: 0.5em;
+        margin-bottom: 1em;
+      }
+
+      input {
+        max-width: 350px;
+        align-self: center;
+        max-height: 40px;
+      }
+
+      textarea { 
+        max-width: 350px;
+      }
+
+      button {
+        margin: 0 auto;
+      }
+
+
+      /* Footer */
     
   }
 
@@ -861,13 +869,17 @@
   .mueble-info h3 {
     font-size: 1em;
   }
-    
+
   form input, form textarea {
-    width: 90%; 
-    max-width: 320px;
+    width: 95%;
+    max-width: 340px;
     padding: 1em;
     display: block;
     margin: 0 auto;
+  }
+
+  form textarea {
+    width: 97%;
   }
 
   #backToTop {
