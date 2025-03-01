@@ -127,6 +127,51 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+// button para mostrar mas/menos muebles
+
+document.addEventListener("DOMContentLoaded", function () {
+  const verMasBtn = document.getElementById("ver-mas-btn");
+  const mueblesOcultos = document.querySelectorAll(".mueble.oculto");
+
+  verMasBtn.addEventListener("click", function () {
+      const estanOcultos = [...mueblesOcultos].some(mueble => !mueble.classList.contains("mostrar"));
+
+      mueblesOcultos.forEach(mueble => {
+          mueble.classList.toggle("mostrar", estanOcultos);
+      });
+
+      this.textContent = estanOcultos ? "Ver menos" : "Ver más";
+
+      // **Detectar a dónde hacer scroll**
+      let targetMueble;
+      if (estanOcultos) {
+          // Si se están mostrando, ir al primer mueble que antes estaba oculto
+          targetMueble = [...mueblesOcultos].find(mueble => mueble.classList.contains("mostrar"));
+      } else {
+          // Si se están ocultando, ir al último mueble visible antes de ocultarse
+          const mueblesVisibles = document.querySelectorAll(".mueble:not(.oculto)");
+          targetMueble = mueblesVisibles[mueblesVisibles.length - 1];
+      }
+
+      if (targetMueble) {
+          setTimeout(() => {
+              targetMueble.scrollIntoView({ behavior: "smooth", block: "start" });
+          }, 300); // Esperar la animación antes de mover la vista
+      }
+
+      // **Ajustar margin-top del botón en ≤ 1300px**
+      if (window.innerWidth <= 1300) {
+          this.style.marginTop = estanOcultos ? "0" : "-380px"; 
+      }
+      if (window.innerWidth >= 1300) {
+          this.style.marginTop = estanOcultos ? "60px" : "-70px";
+      }
+  });
+});
+
+
+
+
 
 // Mobile Menu
 
@@ -251,8 +296,6 @@ document.addEventListener("DOMContentLoaded", function () {
       input.classList.add("input-error");
   }
 });
-
-
 
 
 
