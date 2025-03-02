@@ -4,7 +4,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 8rem;
+    gap: 5rem;
     height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
@@ -51,6 +51,7 @@ body {
     flex-direction: column;
     gap: 2rem;
     align-items: center;
+    text-align: center;
 }
 
 #volver {
