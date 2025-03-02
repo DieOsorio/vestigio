@@ -9,8 +9,46 @@ const closeBtn = document.querySelector('.btn');
 const articles = [...document.querySelectorAll(".articles article")]
 const  articlesLinks = [...document.querySelectorAll("aside a")]
 
+const idioma = document.documentElement.lang;
+
 const offset = 50;
 
+
+// DETECTAR IDIOMA DEL NAVEGADOR
+
+// Verifica si ya se ha hecho la redirección anteriormente
+if (!localStorage.getItem('redireccionado')) {
+    // Aquí se obtiene el idioma del navegador
+    const idioma = navigator.language || navigator.userLanguage;
+  
+    // Verifica si el idioma es inglés o español
+    if (idioma.startsWith('en')) {
+      // Si el idioma es inglés, redirige a la versión en inglés
+      window.location.href = 'pagina-en.html';  // Reemplaza con la URL de tu página en inglés
+    } else if (idioma.startsWith('es')) {
+      // Si el idioma es español, redirige a la versión en español
+      window.location.href = 'pagina-es.html';  // Reemplaza con la URL de tu página en español
+    }
+  
+    // Marca que ya se ha hecho la redirección para que no se ejecute nuevamente
+    localStorage.setItem('redireccionado', 'true');
+  }  
+
+  
+// SELECTOR DE IDIOMA 
+document.getElementById('idiomaSelector').addEventListener('change', (event) => {
+const idiomaSeleccionado = event.target.value;
+localStorage.setItem('idiomaSeleccionado', idiomaSeleccionado);
+
+if (idiomaSeleccionado === 'es') {
+    window.location.href = 'index-es.html'; // Redirige a la versión en español
+} else if (idiomaSeleccionado === 'en') {
+    window.location.href = 'index-en.html'; // Redirige a la versión en inglés
+}
+});
+
+
+  
 
 // NAVBAR
 
@@ -140,7 +178,11 @@ document.addEventListener("DOMContentLoaded", function () {
           mueble.classList.toggle("mostrar", estanOcultos);
       });
 
-      this.textContent = estanOcultos ? "Ver menos" : "Ver más";
+      if (idioma === "en") {
+            this.textContent = estanOcultos ? "See Less" : "See More";
+        } else {
+            this.textContent = estanOcultos ? "Ver Menos" : "Ver Más";
+        }
 
       // **Detectar a dónde hacer scroll**
       let targetMueble;
@@ -208,13 +250,22 @@ document.addEventListener("DOMContentLoaded", function () {
   toggleButton.addEventListener("click", function () {
       if (textContainer.classList.contains("expanded")) {
           textContainer.classList.remove("expanded");
-          toggleButton.innerText = "Leer más";
+
+          if (idioma === "en") {
+            toggleButton.innerText = "Read More";
+        } else {
+            toggleButton.innerText = "Leer Más";
+        }          
 
           // Hacer scroll suave hacia la sección "Sobre Nosotros"
           section.scrollIntoView({ behavior: "smooth", block: "start" });
       } else {
           textContainer.classList.add("expanded");
-          toggleButton.innerText = "Leer menos";
+          if (idioma === "en") {
+            toggleButton.innerText = "Read Less";
+        } else {
+            toggleButton.innerText = "Leer Menos";
+        }    
       }
   });
 });
