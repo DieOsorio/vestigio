@@ -82,25 +82,25 @@ images.forEach(image => {
   // BACK TO TOP
 
   // Seleccionamos el botón
-const backToTopBtn = document.getElementById("backToTop");
+    const backToTopBtn = document.getElementById("backToTop");
 
-// Función para mostrar/ocultar el botón
-window.addEventListener("scroll", () => {
-  // Puedes ajustar el valor (por ejemplo, 200) para definir cuándo debe aparecer
-  if (window.scrollY > 200) {
-    backToTopBtn.style.display = "block";
-  } else {
-    backToTopBtn.style.display = "none";
-  }
-});
+    // Función para mostrar/ocultar el botón
+    window.addEventListener("scroll", () => {
 
-// Al hacer clic, vuelve a la parte superior de la página de forma suave
-backToTopBtn.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-});
+    if (window.scrollY > 200) {
+        backToTopBtn.style.display = "block";
+    } else {
+        backToTopBtn.style.display = "none";
+    }
+    });
+
+    // Al hacer clic, vuelve a la parte superior de la página de forma suave
+    backToTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+    });
 
 
 // button para extender la info de los muebles
@@ -161,10 +161,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // **Ajustar margin-top del botón en ≤ 1300px**
       if (window.innerWidth <= 1300) {
-          this.style.marginTop = estanOcultos ? "0" : "-380px"; 
+          this.style.marginTop = estanOcultos ? "4rem" : "-160px"; 
       }
       if (window.innerWidth >= 1300) {
-          this.style.marginTop = estanOcultos ? "60px" : "-70px";
+          this.style.marginTop = estanOcultos ? "4rem" : "-30px";
       }
   });
 });

@@ -56,9 +56,6 @@
 
 /* ====== HEADER Y NAVBAR ====== */
 
-  .celNav {
-    display: none;
-  }
 
   /* Aside */
   aside ul{
@@ -289,39 +286,18 @@
                1px 1px #eed09d, -1px -1px #eed09d, 1px -1px #eed09d, -1px 1px #eed09d;
   }
 
-  /* #nosotros  h3 {
-    color: var(--background-color);
-    font-family: "Montserrat", sans-serif;
-    font-weight: bolder;
-    text-transform: uppercase;
-    font-size: 1.5em;
-  } */
-
-  #nosotros  p {
-    margin-bottom: 2rem;
-    text-align: justify;
-  }
-
-  .desktop-text {
-    display: block; /* Visible por defecto */
-  }
-
-  .mobile-text {
-    display: none; /* Oculto en desktop */
-  }
-
   .muebles-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 2rem;
   }
   .mueble {
     display: flex;
     flex-direction: column;
     width: 100%;
     max-width: 370px;
-    margin-top: 3rem;
     border: 3px solid var(--links-selected);
     padding: 2rem;
     background-color: var(--selected-b);
@@ -387,11 +363,26 @@
     display: block;
     transition: color 0.3s ease-in-out;
     margin: 0 auto;
-    margin-top: -70px;
+    margin-top: -3.5rem;
   }
 
   #ver-mas-btn:hover {
     color: var(--links-selected);
+  }
+
+  /* Sobre Nosotros */
+
+  #nosotros  p {
+    margin-bottom: 2rem;
+    text-align: justify;
+  }
+
+  .desktop-text {
+    display: block; 
+  }
+
+  .mobile-text {
+    display: none; 
   }
 
   /* Form*/
@@ -564,14 +555,18 @@
     .articles {
       width: 52vw;
     }
+
+    .muebles-container {
+      flex-direction: column;
+      align-items: center;
+    }
     
     .mueble {
       max-width: 600px;
-      margin: 3em auto;
     }
 
     #ver-mas-btn {
-      margin-top: -380px; 
+      margin-top: -150px;
     }
 
     /* Contacto */
@@ -789,13 +784,7 @@
         hyphens: auto;
         word-spacing: normal;
         line-height: 1.7; 
-    }
-    /* Form */
-    
-
-    /* Footer */
-
-    
+    }   
 
   }
 
@@ -854,11 +843,6 @@
 
     .mueble {
       max-width: 650px;
-    }
-
-    .muebles-container {
-      justify-content: center;
-      align-items: center;
     }
 
     .mueble-info p {
@@ -926,9 +910,6 @@
       button {
         margin: 0 auto;
       }
-
-
-      /* Footer */
     
   }
 
@@ -937,7 +918,6 @@
   /* Media screen = 650px */
 
   @media only screen and (max-width: 650px) {
-
 
     .icon-link {
       width: 37px;
@@ -953,6 +933,7 @@
       bottom: 7vh;
       left: 17vw;
     }
+
   }
 
 
@@ -977,6 +958,7 @@
       bottom: 4.5vh;
       left: 16vw;
     }
+
   }
 
 
@@ -1024,4 +1006,5 @@
     bottom: 10px;
     right: 10px;
   }
+  
 }
