@@ -24,10 +24,10 @@ if (!localStorage.getItem('redireccionado')) {
     // Verifica si el idioma es inglés o español
     if (idioma.startsWith('en')) {
       // Si el idioma es inglés, redirige a la versión en inglés
-      window.location.href = 'pagina-en.html';  // Reemplaza con la URL de tu página en inglés
+      window.location.href = 'index-en.html';  // Reemplaza con la URL de tu página en inglés
     } else if (idioma.startsWith('es')) {
       // Si el idioma es español, redirige a la versión en español
-      window.location.href = 'pagina-es.html';  // Reemplaza con la URL de tu página en español
+      window.location.href = 'index-es.html';  // Reemplaza con la URL de tu página en español
     }
   
     // Marca que ya se ha hecho la redirección para que no se ejecute nuevamente
