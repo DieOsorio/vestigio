@@ -144,23 +144,21 @@ images.forEach(image => {
 // button para extender la info de los muebles
 
 document.addEventListener("DOMContentLoaded", function () {
-  document.querySelectorAll(".mueble-info button").forEach(button => {
-      button.addEventListener("click", function () {
-          const info = document.querySelectorAll(".mueble-info p")
-
-          info.forEach(element => {
-            const isOpen = element.style.maxHeight == "400px";
+    document.querySelectorAll(".mueble-info button").forEach(button => {
+        button.addEventListener("click", function () {
+            const info = this.closest(".mueble-info").querySelector("p");
+            
+            const isOpen = info.style.maxHeight === "400px";
 
             if (isOpen) {
-              element.style.maxHeight = "0px";
-              this.innerHTML = "▼";
+                info.style.maxHeight = "0px";
+                this.innerHTML = "▼";
             } else {
-                element.style.maxHeight = "400px";
+                info.style.maxHeight = "400px";
                 this.innerHTML = "▲";
             }
-          });
-      });
-  });
+        });
+    });
 });
 
 
