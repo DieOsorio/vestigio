@@ -24,10 +24,10 @@ if (!localStorage.getItem('redireccionado')) {
     // Verifica si el idioma es inglés o español
     if (idioma.startsWith('en')) {
       // Si el idioma es inglés, redirige a la versión en inglés
-      window.location.href = '../en/index-en.html';  // Reemplaza con la URL de tu página en inglés
+      window.location.href = './en.html';  // Reemplaza con la URL de tu página en inglés
     } else if (idioma.startsWith('es')) {
       // Si el idioma es español, redirige a la versión en español
-      window.location.href = '../es/index-es.html';  // Reemplaza con la URL de tu página en español
+      window.location.href = './es.html';  // Reemplaza con la URL de tu página en español
     }
   
     // Marca que ya se ha hecho la redirección para que no se ejecute nuevamente
@@ -41,9 +41,9 @@ const idiomaSeleccionado = event.target.value;
 localStorage.setItem('idiomaSeleccionado', idiomaSeleccionado);
 
 if (idiomaSeleccionado === 'es') {
-    window.location.href = '../es/index-es.html'; // Redirige a la versión en español
+    window.location.href = './es.html'; // Redirige a la versión en español
 } else if (idiomaSeleccionado === 'en') {
-    window.location.href = '../en/index-en.html'; // Redirige a la versión en inglés
+    window.location.href = './en.html'; // Redirige a la versión en inglés
 }
 });
 

@@ -28,16 +28,16 @@
 
         // Redirigir según la preferencia
         if (idiomaSeleccionado === 'es') {
-            window.location.href = 'es/index-es.html';
+            window.location.href = './es.html';
         } else if (idiomaSeleccionado === 'en') {
-            window.location.href = 'en/index-en.html';
+            window.location.href = './en.html';
         } else if (idiomaNavegador.startsWith('es')) {
-            window.location.href = 'es/index-es.html';
+            window.location.href = './es.html';
         } else if (idiomaNavegador.startsWith('en')) {
-            window.location.href = 'en/index-en.html';
+            window.location.href = './en.html';
         } else {
             // Si no se detecta nada, redirige a una versión por defecto (español o inglés)
-            window.location.href = 'es/index-es.html';
+            window.location.href = './es.html';
         }
     </script>
 </body>
