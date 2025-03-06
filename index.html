@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="./css/loader.css" >
     <link rel="manifest" href="images/site.webmanifest">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Vestigio</title>
+    <meta name="description" content="Especialistas en restauración de muebles antiguos y modernos. Descubre cómo damos nueva vida a tus muebles con nuestros servicios de restauración profesional.">
+    <title>Vestigio | Restauración de Muebles</title>
 </head>
 <body>
 
@@ -27,16 +28,16 @@
 
         // Redirigir según la preferencia
         if (idiomaSeleccionado === 'es') {
-            window.location.href = 'index-es.html';
+            window.location.href = 'es/index-es.html';
         } else if (idiomaSeleccionado === 'en') {
-            window.location.href = 'index-en.html';
+            window.location.href = 'en/index-en.html';
         } else if (idiomaNavegador.startsWith('es')) {
-            window.location.href = 'index-es.html';
+            window.location.href = 'es/index-es.html';
         } else if (idiomaNavegador.startsWith('en')) {
-            window.location.href = 'index-en.html';
+            window.location.href = 'en/index-en.html';
         } else {
             // Si no se detecta nada, redirige a una versión por defecto (español o inglés)
-            window.location.href = 'index-es.html';
+            window.location.href = 'es/index-es.html';
         }
     </script>
 </body>
