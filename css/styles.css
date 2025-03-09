@@ -391,7 +391,7 @@
     display: block;
     transition: color 0.3s ease-in-out;
     margin: 0 auto;
-    margin-top: -3.5rem;
+    margin-top: -9rem;
   }
 
   #ver-mas-btn:hover {
@@ -594,7 +594,7 @@
     }
 
     #ver-mas-btn {
-      margin-top: -150px;
+      margin-top: -380px;
     }
 
     /* Contacto */
