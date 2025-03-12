@@ -231,6 +231,16 @@
     left: 9vw;
   }
 
+  .icon-link.fb {
+    bottom: 5.3vh;
+    left: 14.4vw;
+  }
+  
+  .icon-link.pt {
+    bottom: 5.3vh;
+    left: 19.9vw;
+  }
+
   #images a:hover{
     background-color: #0f08045b;
   }
@@ -359,10 +369,6 @@
     font-size: clamp(0.9rem, 1.4vw, 1rem);
   }
 
-  .bullet {
-    color: var(--links-selected);
-  }
-
   #toggleText{
     display: none;
   }
@@ -379,6 +385,45 @@
       transform: scaleY(1);
       height: auto;
   }
+
+  .mueble-info{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .ig-anchor {
+    all: unset;
+    margin-top: auto;
+  }
+  .ig-anchor:hover {
+    background-color: transparent;
+  }
+
+  .mueble-info a .instagram-button {
+    background-color: var(--background-main);
+    color: #feda75;
+    border: 2px solid  var(--links-selected);
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+.mueble-info a .instagram-button:hover {
+    background-color: #feda75;
+    color: var(--background-color);
+    border-color: var(--background-main);
+}
+
 
   #ver-mas-btn {
     background: none;
@@ -523,6 +568,10 @@
     filter: invert(82%) sepia(73%) saturate(2180%) hue-rotate(67deg) brightness(89%) contrast(86%);
   }
 
+  footer .pt {
+    filter: invert(23%) sepia(78%) saturate(6732%) hue-rotate(342deg) brightness(84%) contrast(118%);
+  }
+
 
   /* Back to top button */
 
@@ -577,6 +626,16 @@
     .icon-link.wp {
       bottom: 5.05vh;
       left: 8.9vw;
+    }
+
+    .icon-link.fb {
+      bottom: 5.05vh;
+      left: 14.3vw;
+    }
+    
+    .icon-link.pt {
+      bottom: 5.05vh;
+      left: 19.7vw;
     }
 
     /* Articles */
@@ -635,6 +694,16 @@
     .icon-link.wp {
       bottom: 4.7vh;
       left: 9.1vw;
+    }
+
+    .icon-link.fb {
+      bottom: 4.7vh;
+      left: 14.6vw;
+    }
+    
+    .icon-link.pt {
+      bottom: 4.7vh;
+      left: 20.1vw;
     }
 
   }
@@ -797,6 +866,16 @@
       left: 8.9vw;
     }
 
+    .icon-link.fb {
+      bottom: 3.5vh;
+      left: 14.4vw;
+    }
+    
+    .icon-link.pt {
+      bottom: 3.5vh;
+      left: 19.9vw;
+    }
+
     /* Articles */
 
     .articles {
@@ -854,6 +933,16 @@
     .icon-link.wp {
       bottom: 7.5vh;
       left: 17vw;
+    }
+
+    .icon-link.fb {
+      bottom: 7.5vh;
+      left: 29vw;
+    }
+    
+    .icon-link.pt {
+      bottom: 7.5vh;
+      left: 41vw;
     }
 
     /* Articles */
@@ -958,12 +1047,18 @@
 
     .icon-link.ig {
       bottom: 7vh;
-      left: 5vw;
     }
     
     .icon-link.wp {
       bottom: 7vh;
-      left: 17vw;
+    }
+
+    .icon-link.fb {
+      bottom: 7vh;
+    }
+    
+    .icon-link.pt {
+      bottom: 7vh;
     }
 
   }
@@ -991,6 +1086,16 @@
       left: 16vw;
     }
 
+    .icon-link.fb {
+      bottom: 4.5vh;
+      left: 27.5vw;
+    }
+    
+    .icon-link.pt {
+      bottom: 4.5vh;
+      left: 39vw;
+    }
+
   }
 
 
@@ -1014,12 +1119,18 @@
 
   .icon-link.ig {
     bottom: 2.8vh;
-    left: 4.5vw;
   }
   
   .icon-link.wp {
     bottom: 2.8vh;
-    left: 16vw;
+  }
+
+  .icon-link.fb {
+    bottom: 2.8vh;
+  }
+  
+  .icon-link.pt {
+    bottom: 2.8vh;
   }
 
   form input, form textarea {
