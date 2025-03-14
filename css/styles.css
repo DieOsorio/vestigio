@@ -15,6 +15,8 @@
     --links: #eed09d;
     --links-selected: #eed09dc4;
     --selected-b: #2b2015;
+    --muebles: #3e2c197b;
+    --nosotros: #150b057c;
   }
 
   /* ====== LAYOUT GENERAL ====== */
@@ -32,7 +34,7 @@
   }
 
   main {
-    padding: 40px 0;
+    padding-top: 40px;
     background-color: var(--background-main);
     margin: 0 auto;
     width: 95vw;
@@ -192,6 +194,7 @@
     position: relative;
     height: auto;
     z-index: 1;
+    margin-top: -12px;
   }
   
   .banner img {
@@ -208,37 +211,37 @@
   }
 
  .icon-link {
-    height: 49px;
-    width: 49px;
+    height: 30px;
+    width: 30px;
     padding: 0;
     border-radius: 50%;
     position: absolute;
     display: block;
-    z-index: 5;
+    z-index: 5;    
   }
 
   .icon-link:hover {
     background-color: transparent;
   }
 
-  .icon-link.ig {
-    bottom: 5.3vh;
-    left: 3.6vw;
-  }
-  
   .icon-link.wp {
-    bottom: 5.3vh;
-    left: 9vw;
+    top: 3.25vh;
+    left: 1.7vw;
+  }
+
+  .icon-link.ig {
+    top: 3.25vh;
+    left: 4.7vw;
   }
 
   .icon-link.fb {
-    bottom: 5.3vh;
-    left: 14.4vw;
+    top: 3.25vh;
+    left: 7.85vw;
   }
   
   .icon-link.pt {
-    bottom: 5.3vh;
-    left: 19.9vw;
+    top: 3.25vh;
+    left: 10.9vw;
   }
 
   #images a:hover{
@@ -300,23 +303,27 @@
   /* Articles */
 
   .articles {
+    width: 100%;
+    text-align: center;
+  }
+  .articles article {
+    padding: 4em 0;
+  }
+
+  .articles article > * {
     width: 60vw;
     margin: 0 auto;
-    text-align: center;
-    margin-top: 8rem;
-  }
-  article {
-    margin-bottom: 10rem;
   }
 
   
   article > hr {
-    margin-bottom: 4rem;
-    margin-top: 1rem;
     background-color: var(--links-selected);
+    margin-bottom: 3em !important;
+    margin-top: 1em !important;
   }
 
   article > h2 {
+    font-size: 1.9em;
     letter-spacing: 1.5px;
     color: var(--selected-b);
     text-transform: uppercase;
@@ -324,12 +331,27 @@
                1px 1px #eed09d, -1px -1px #eed09d, 1px -1px #eed09d, -1px 1px #eed09d;
   }
 
+  #muebles {
+    background-color: var(--muebles);
+  }
+
+  #muebles h3 {
+    margin-bottom: 2em;
+  }
+
+  #nosotros {
+      background-color: var(--nosotros);
+  }
+
+  #contacto {
+      background-color: var(--muebles);
+  }
+
   .muebles-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
-    margin-top: 2rem;
   }
   .mueble {
     display: flex;
@@ -446,7 +468,6 @@
   /* Sobre Nosotros */
 
   #nosotros  p {
-    margin-bottom: 2rem;
     text-align: justify;
   }
 
@@ -464,8 +485,8 @@
   form div {
     display: flex;
     flex-direction: column;
-    margin-bottom: 3rem;
     justify-self: center;
+    gap: 1em;
   }
 
   form label {
@@ -617,29 +638,29 @@
     }
 
     /* Banner */
-  
-    .icon-link.ig {
-      bottom: 5.05vh;
-      left: 3.4vw;
-    }
     
     .icon-link.wp {
-      bottom: 5.05vh;
-      left: 8.9vw;
+      top: 2.6vh;
+      left: 1.7vw;
     }
 
+    .icon-link.ig {
+      top: 2.6vh;
+      left: 4.7vw;
+    }
+  
     .icon-link.fb {
-      bottom: 5.05vh;
-      left: 14.3vw;
+      top: 2.6vh;
+      left: 7.85vw;
     }
     
     .icon-link.pt {
-      bottom: 5.05vh;
-      left: 19.7vw;
+      top: 2.6vh;
+      left: 10.9vw;
     }
 
     /* Articles */
-    .articles {
+    .articles article > * {
       width: 52vw;
     }
 
@@ -682,28 +703,28 @@
    @media only screen and (max-width: 1150px){
 
     .icon-link {
-      width: 37px;
-      height: 37px;
-    }
-
-    .icon-link.ig {
-      bottom: 4.7vh;
-      left: 3.6vw;
+      height: 25px;
+      width: 25px;
     }
     
     .icon-link.wp {
-      bottom: 4.7vh;
-      left: 9.1vw;
+      top: 2.8vh;
+      left: 1.7vw;
     }
-
+  
+    .icon-link.ig {
+      top: 2.8vh;
+      left: 4.7vw;
+    }
+  
     .icon-link.fb {
-      bottom: 4.7vh;
-      left: 14.6vw;
+      top: 2.8vh;
+      left: 7.85vw;
     }
     
     .icon-link.pt {
-      bottom: 4.7vh;
-      left: 20.1vw;
+      top: 2.8vh;
+      left: 10.9vw;
     }
 
   }
@@ -852,33 +873,33 @@
     }
 
     .icon-link {
-      width: 37px;
-      height: 37px;
-    }
-
-    .icon-link.ig {
-      bottom: 3.5vh;
-      left: 3.4vw;
+      height: 22px;
+      width: 22px;
     }
     
     .icon-link.wp {
-      bottom: 3.5vh;
-      left: 8.9vw;
+      top: 2.2vh;
+      left: 1.7vw;
     }
-
+  
+    .icon-link.ig {
+      top: 2.2vh;
+      left: 4.7vw;
+    }
+  
     .icon-link.fb {
-      bottom: 3.5vh;
-      left: 14.4vw;
+      top: 2.2vh;
+      left: 7.85vw;
     }
     
     .icon-link.pt {
-      bottom: 3.5vh;
-      left: 19.9vw;
+      top: 2.2vh;
+      left: 10.9vw;
     }
 
     /* Articles */
 
-    .articles {
+    .articles article > * {
       width: 70vw;
     }
 
@@ -926,28 +947,32 @@
     }
 
     .icon-link.ig {
+      top: auto;
       bottom: 7.5vh;
       left: 5vw;
     }
     
     .icon-link.wp {
+      top: auto;
       bottom: 7.5vh;
       left: 17vw;
     }
 
     .icon-link.fb {
+      top: auto;
       bottom: 7.5vh;
       left: 29vw;
     }
     
     .icon-link.pt {
+      top: auto;
       bottom: 7.5vh;
       left: 41vw;
     }
 
     /* Articles */
 
-    .articles {
+    .articles article > * {
       width: 80vw;
     }
     
@@ -1046,18 +1071,22 @@
     }
 
     .icon-link.ig {
+      top: auto;
       bottom: 7vh;
     }
     
     .icon-link.wp {
+      top: auto;
       bottom: 7vh;
     }
 
     .icon-link.fb {
+      top: auto;
       bottom: 7vh;
     }
     
     .icon-link.pt {
+      top: auto;
       bottom: 7vh;
     }
 
@@ -1077,21 +1106,25 @@
     }
 
     .icon-link.ig {
+      top: auto;
       bottom: 4.5vh;
       left: 4.5vw;
     }
     
     .icon-link.wp {
+      top: auto;
       bottom: 4.5vh;
       left: 16vw;
     }
 
     .icon-link.fb {
+      top: auto;
       bottom: 4.5vh;
       left: 27.5vw;
     }
     
     .icon-link.pt {
+      top: auto;
       bottom: 4.5vh;
       left: 39vw;
     }
@@ -1112,27 +1145,6 @@
     font-size: 1em;
   }
 
-  .icon-link {
-    width: 28px;
-    height: 28px;
-  }
-
-  .icon-link.ig {
-    bottom: 2.8vh;
-  }
-  
-  .icon-link.wp {
-    bottom: 2.8vh;
-  }
-
-  .icon-link.fb {
-    bottom: 2.8vh;
-  }
-  
-  .icon-link.pt {
-    bottom: 2.8vh;
-  }
-
   form input, form textarea {
     width: 95%;
     max-width: 340px;
@@ -1143,6 +1155,10 @@
 
   form textarea {
     width: 100%;
+  }
+
+  footer > div {
+    gap: 1em;
   }
 
   #backToTop {
