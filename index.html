@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DBVZR8R8M2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-DBVZR8R8M2');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="stylesheet" href="./css/loader.css" >
+    <link rel="manifest" href="images/site.webmanifest">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Especialistas en restauración de muebles antiguos y modernos. Descubre cómo damos nueva vida a tus muebles con nuestros servicios de restauración profesional.">
+    <title>Vestigio | Restauración de Muebles</title>
+</head>
+<body>
+
+    <div class="loader-container">
+        <img src="./images/brown logo.png" alt="Logo" class="logo">
+        <div class="dots">
+            <span>.</span><span>.</span><span>.</span>
+        </div>
+    </div>
+
+    <script>
+        // Verificar la preferencia del usuario (almacenada en localStorage o idioma del navegador)
+        const idiomaSeleccionado = localStorage.getItem('idiomaSeleccionado');
+        const idiomaNavegador = navigator.language || navigator.userLanguage;
+
+        // Redirigir según la preferencia
+        if (idiomaSeleccionado === 'es') {
+            window.location.href = './es.html';
+        } else if (idiomaSeleccionado === 'en') {
+            window.location.href = './en.html';
+        } else if (idiomaNavegador.startsWith('es')) {
+            window.location.href = './es.html';
+        } else if (idiomaNavegador.startsWith('en')) {
+            window.location.href = './en.html';
+        } else {
+            // Si no se detecta nada, redirige a una versión por defecto (español o inglés)
+            window.location.href = './es.html';
+        }
+    </script>
+</body>
+</html>
