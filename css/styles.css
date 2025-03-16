@@ -335,10 +335,6 @@
     background-color: var(--muebles);
   }
 
-  #muebles h3 {
-    margin-bottom: 2em;
-  }
-
   #nosotros {
       background-color: var(--nosotros);
   }
@@ -351,7 +347,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 40px;
+    gap: 20px;
   }
   .mueble {
     display: flex;
@@ -494,6 +490,7 @@
     align-self: center;
     text-transform: uppercase;
     color: var(--text-color);
+    margin-bottom: -10px;
   }
 
   form input {
@@ -674,7 +671,7 @@
     }
 
     #ver-mas-btn {
-      margin-top: -380px;
+      margin-top: -20rem;
     }
 
     /* Contacto */

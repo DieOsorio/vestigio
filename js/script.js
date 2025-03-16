@@ -201,10 +201,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // **Ajustar margin-top del botón en ≤ 1300px**
       if (window.innerWidth <= 1300) {
-          this.style.marginTop = estanOcultos ? "4rem" : "-380px"; 
+          this.style.marginTop = estanOcultos ? "3rem" : "-20rem"; 
       }
       if (window.innerWidth >= 1300) {
-          this.style.marginTop = estanOcultos ? "4rem" : "-9rem";
+          this.style.marginTop = estanOcultos ? "3rem" : "-9rem";
       }
   });
 });
