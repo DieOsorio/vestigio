@@ -1,0 +1,91 @@
+{   
+    "title": "Vestigio | Restauración de Muebles",
+    "description": "Especialistas en restauración de muebles antiguos y modernos. Descubre cómo damos nueva vida a tus muebles con nuestros servicios de restauración profesional.",
+    "navBar": {
+        "flag": {
+            "value": "Español",
+            "image": "/images/flags/es.webp"
+        },
+        "sections": {
+            "home": "HOME",
+            "furnitures": "MUEBLES",
+            "aboutUs": "SOBRE NOSOTROS",
+            "contactUs": "CONTACTO"
+        }
+    },
+    "banner": {
+        "desktop": "/images/banners/banner.webp",
+        "mobile": "/images/banners/mobileBanner.webp"
+    },
+    "furnitures": {
+        "title": "Muebles",
+        "view": "Ver en Instagram",
+        "more": "Ver más",
+        "descriptionDesk": "Detrás de cada mueble hay una historia. En cada restauración, rescatamos la esencia de cada pieza, preservando su alma y su belleza para que sigan formando parte de nuevos momentos.",
+        "descriptionMobile": "Cada mueble tiene una historia. Restauramos su esencia para que siga creando momentos.",
+        
+        "furnitureCard": {
+            "0": {
+                "title": "Boulle Style Cabinet",
+                "description": "Boulle-style cabinet with brass and tortoiseshell marquetry on black wood. Its elegant design features gilded Baroque-inspired ornamentation, carved details, and decorative figures, evoking the opulence of 17th-century France.",
+                "link": "https://www.instagram.com/p/DF6JIrOS2R0/"
+            },
+            "1": {
+                "title": "Late Austrian Biedermeier Commode (19th century)",
+                "description": "Structure in fine wood with exquisite floral marquetry on the top. Elegant and refined design, with bronze handles and handcrafted finishes. A testament to the luxury and craftsmanship of the era.",
+                "link": "https://www.instagram.com/p/DFgL2fZStA6/"
+            },
+            "2": {
+                "title": "Baroque-style mirror frame",
+                "description": "Baroque-style mirror with a richly ornamented carved and gilded wooden frame. Decorated with volutes and acanthus leaves in relief, it stands out for its gold leaf finish, enhancing its elegance and sophistication.",
+                "link": "https://www.instagram.com/p/DFoPHQ2y12H/"
+            },
+            "3": {
+                "title": "English-Style Table",
+                "description": "English-style solid wood table with a circular top and elegant natural grain. Turned base with a three-legged carved foot. A classic and refined design, perfect for elegant spaces.",
+                "link": "https://www.instagram.com/p/DFxSU75Rs0E/"
+            },
+            "4": {
+                "title": "Jacaranda Table",
+                "description": "Round jacaranda wood table with light wood marquetry and a refined design. Its polished top highlights the dark grain and elegant central motif. The carved pedestal and ornate base provide stability and sophistication, evoking the classic style of antique furniture.",
+                "link": "https://www.instagram.com/p/DGlnEg2y0rz/"
+            },
+            "5": {
+                "title": "Art Deco Executive Desk",
+                "description": "Elegant Art Deco executive desk (circa 1920-1940), featuring a spectacular walnut burl finish and a design with clean lines and rounded edges. Its solid central base adds strength and sophistication, reflecting the essence of luxury furniture from the era. Ideal for spaces with a classic and distinguished atmosphere.",
+                "link": "https://www.instagram.com/p/DGEX0oJSnvu/"
+            },
+            "6": {
+                "title": "Louis XV Chest of Drawers",
+                "description": "Louis XV-style chest of drawers with a fine wood structure and elegant gilded bronze applications. Its curved lines and detailed ornamentation reflect the sophistication of Rococo design. The drawers, decorated with floral bronze motifs, add a touch of luxury and distinction, while its cabriole legs emphasize the elegance characteristic of the era. Ideal for spaces seeking a classic and refined atmosphere.",
+                "link": "https://www.instagram.com/p/DG1RdYYSKKy/"
+            },
+            "7": {
+                "title": "Rococo-style Mirror Frame",
+                "description": "Antique mirror with a Rococo-style frame, restored with a gilded finish that highlights its ornamental details. A touch of elegance and sophistication for any space.",
+                "link": "https://www.instagram.com/p/DG8Y9MsMhtk/"
+            }
+        }
+    },    
+    "aboutUs": {
+        "title": "Sobre Nosotros",
+        "description": {
+            "0": "Vestigio es más que una empresa de restauración; somos guardianes de historias, dedicados a asegurar que cada mueble restaurado no solo recupere su esplendor, sino que continúe siendo un legado para futuras generaciones.",
+            "1": "En Vestigio, estamos apasionados por el arte de la restauración, porque creemos que cada mueble cuenta una historia única que merece ser preservada y revivida. No se trata solo de devolver la belleza a una pieza antigua, sino de honrar las memorias y la tradición que representa, asegurándonos de que su legado continúe siendo parte de la vida de nuestros clientes.",
+            "2": "En un mundo donde lo nuevo a menudo reemplaza a lo antiguo, vemos una oportunidad de destacar y valorar lo que ya existe, lo que tiene alma y carácter. Nos dedicamos a la restauración de muebles porque creemos en la importancia de mantener viva la historia, la elegancia y la tradición, ofreciendo a nuestros clientes la posibilidad de experimentar la belleza de lo clásico con un toque de refinamiento moderno.",
+            "3": "Nuestro objetivo es crear un impacto duradero, donde cada restauración no solo renueve el aspecto de un mueble, sino que también refuerce su valor emocional y cultural. A través de nuestro trabajo, buscamos conectar a las personas con su pasado y su legado, mientras aseguramos que la integridad de cada pieza se preserve para las futuras generaciones."
+        },
+        "more": "Leer más"
+    },
+    "contactUs": {
+        "title": "Contacto",
+        "form": {
+            "name": "Nombre",
+            "lasName": "Apellido",
+            "phone": "Teléfono",
+            "email": "E-Mail",
+            "message": "Mensaje"
+        },
+        "send": "enviar"
+    }
+}
