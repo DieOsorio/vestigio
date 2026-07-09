@@ -1,0 +1,47 @@
+{
+  "eyebrow": "Galería",
+  "title": "Trabajos destacados",
+  "description": "Una selección de piezas restauradas que reflejan el carácter atemporal y el oficio de Vestigio.",
+  "items": [
+    {
+      "title": "Cómoda Austriaca Biedermeier Tardío (s. XIX)",
+      "description": "Estructura en madera noble con exquisita marquetería floral en la tapa. Diseño elegante y refinado, con tiradores de bronce y acabados artesanales. Un testimonio del lujo y la maestría de la época.",
+      "image": "/images/furnitures/commoda-austriaca-biedermeier-tarde.webp"
+    },
+    {
+      "title": "Marco de Espejo Estilo Barroco",
+      "description": "Espejo de estilo barroco con un marco ricamente ornamentado en madera tallada y dorada. Decorado con volutas y hojas de acanto en relieve, destaca por su acabado en pan de oro, realzando su elegancia y sofisticación.",
+      "image": "/images/furnitures/marco-espejo-estilo-barroco.webp"
+    },
+    {
+      "title": "Gabinete Estilo Boulle",
+      "description": "Gabinete estilo Boulle con marquetería en latón y carey sobre madera negra. Su diseño elegante incluye ornamentación dorada de inspiración barroca, detalles tallados y figuras decorativas, evocando la opulencia del siglo XVII en Francia.",
+      "image": "/images/furnitures/gabinete-estilo-boulle.webp"
+    },
+    {
+      "title": "Mesa Estilo Inglés",
+      "description": "Mesa de estilo inglés de madera maciza con tapa circular y elegante veta natural. Base torneada con pie de tres apoyos tallado. Un diseño clásico y refinado ideal para ambientes elegantes.",
+      "image": "/images/furnitures/mesa-estilo-ingles.webp"
+    },
+    {
+      "title": "Mesa de Jacarandá",
+      "description": "Mesa redonda de jacarandá con marquetería en madera clara y un diseño refinado. Su tablero pulido resalta las vetas oscuras y el elegante motivo central. El pedestal tallado y la base ornamentada aportan estabilidad y sofisticación, evocando el estilo clásico de los muebles antiguos.",
+      "image": "/images/furnitures/mesa-jacaranda.webp"
+    },
+    {
+      "title": "Mesa de Directorio Art Déco",
+      "description": "Elegante mesa de directorio de estilo Art Déco (circa 1920-1940), con un espectacular acabado en raíz de nogal y un diseño de líneas limpias y bordes redondeados. Su base central maciza aporta solidez y sofisticación, reflejando la esencia del mobiliario de lujo de la época. Ideal para espacios con un aire clásico y distinguido.",
+      "image": "/images/furnitures/mesa-directorio-art-deco.webp"
+    },
+    {
+      "title": "Cómoda Luis XV",
+      "description": "Cómoda de estilo Luis XV con estructura de madera noble y elegantes aplicaciones de bronce dorado. Sus líneas curvas y ornamentaciones detalladas reflejan la sofisticación del diseño rococó. Los cajones decorados con motivos florales en bronce aportan un toque de lujo y distinción, mientras que sus patas cabriolé enfatizan la elegancia característica de la época. Ideal para espacios que buscan un aire clásico y refinado.",
+      "image": "/images/furnitures/commoda-luis-xv.webp"
+    },
+    {
+      "title": "Marco de Espejo Estilo Rococó",
+      "description": "Espejo antiguo con marco de estilo rococó, restaurado con un acabado dorado que resalta sus detalles ornamentales. Un toque de elegancia y sofisticación para cualquier espacio.",
+      "image": "/images/furnitures/marco-espejo-estilo-rococo.webp"
+    }
+  ]
+}

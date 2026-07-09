@@ -1,0 +1,26 @@
+{
+  "eyebrow": "Contact",
+  "title": "Let's talk",
+  "description": "If you want to coordinate a consultation or learn more about our work, write to us.",
+  "email": "hola@vestigiorestauraciones.com",
+  "socialLinks": [
+    {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/vestigio.restauraciones/"
+    },
+    {
+      "label": "Facebook",
+      "href": "https://www.facebook.com/vestigio.restauraciones/"
+    },
+    {
+      "label": "Pinterest",
+      "href": "https://www.pinterest.com/vestigiorestauraciones/"
+    }
+  ],
+  "form": {
+    "namePlaceholder": "Your name",
+    "emailPlaceholder": "Your email",
+    "messagePlaceholder": "Your message",
+    "button": "Send"
+  }
+}

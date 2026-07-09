@@ -1,0 +1,15 @@
+{
+  "eyebrow": "Artisan restoration",
+  "title": "Furniture and objects with history",
+  "description": "We are building a digital experience so Vestigio's identity becomes stronger, closer and more memorable.",
+  "cta": {
+    "primary": {
+      "label": "View work",
+      "href": "#galeria"
+    },
+    "secondary": {
+      "label": "Contact",
+      "href": "#contacto"
+    }
+  }
+}

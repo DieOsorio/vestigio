@@ -1,0 +1,47 @@
+{
+  "eyebrow": "Gallery",
+  "title": "Featured work",
+  "description": "A selection of restored pieces that reflect Vestigio's timeless character and craftsmanship.",
+  "items": [
+    {
+      "title": "Late Biedermeier Austrian Commode (19th c.)",
+      "description": "Structure in noble wood with exquisite floral marquetry on the top. Elegant and refined design, with bronze handles and handcrafted finishes. A testimony to the luxury and mastery of the era.",
+      "image": "/images/furnitures/commoda-austriaca-biedermeier-tarde.webp"
+    },
+    {
+      "title": "Baroque-Style Mirror Frame",
+      "description": "Baroque-style mirror with a richly ornamented frame in carved and gilded wood. Decorated with volutes and acanthus leaves in relief, it stands out for its gilt finish, enhancing its elegance and sophistication.",
+      "image": "/images/furnitures/marco-espejo-estilo-barroco.webp"
+    },
+    {
+      "title": "Boulle-Style Cabinet",
+      "description": "Boulle-style cabinet with brass and tortoiseshell marquetry over black wood. Its elegant design includes gilded ornamentation inspired by the Baroque, carved details and decorative figures, evoking the opulence of seventeenth-century France.",
+      "image": "/images/furnitures/gabinete-estilo-boulle.webp"
+    },
+    {
+      "title": "English-Style Table",
+      "description": "English-style table of solid wood with a circular top and elegant natural grain. Turned base with a carved three-legged support. A classic and refined design, ideal for elegant interiors.",
+      "image": "/images/furnitures/mesa-estilo-ingles.webp"
+    },
+    {
+      "title": "Jacaranda Table",
+      "description": "Round jacaranda table with light wood marquetry and a refined design. Its polished top highlights the dark veining and the elegant central motif. The carved pedestal and ornamented base add stability and sophistication, evoking the classical style of antique furniture.",
+      "image": "/images/furnitures/mesa-jacaranda.webp"
+    },
+    {
+      "title": "Art Deco Director's Table",
+      "description": "Elegant Art Deco director's table (circa 1920-1940), with a striking walnut root finish and a design of clean lines and rounded edges. Its solid central base provides strength and sophistication, reflecting the essence of luxury furniture of the period. Ideal for spaces with a classic and distinguished feel.",
+      "image": "/images/furnitures/mesa-directorio-art-deco.webp"
+    },
+    {
+      "title": "Louis XV Commode",
+      "description": "Louis XV-style commode with a noble wood structure and elegant gilded bronze applications. Its curved lines and detailed ornamentation reflect the sophistication of Rococo design. The drawers decorated with floral bronze motifs add a touch of luxury and distinction, while the cabriole legs emphasize the elegance characteristic of the era. Ideal for spaces seeking a classic and refined air.",
+      "image": "/images/furnitures/commoda-luis-xv.webp"
+    },
+    {
+      "title": "Rococo-Style Mirror Frame",
+      "description": "Antique mirror with a Rococo-style frame, restored with a gilded finish that highlights its ornamental details. A touch of elegance and sophistication for any space.",
+      "image": "/images/furnitures/marco-espejo-estilo-rococo.webp"
+    }
+  ]
+}

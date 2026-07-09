@@ -1,0 +1,26 @@
+{
+  "eyebrow": "Contacto",
+  "title": "Hablemos",
+  "description": "Si querés coordinar una consulta o conocer más sobre nuestros trabajos, escribinos.",
+  "email": "hola@vestigiorestauraciones.com",
+  "socialLinks": [
+    {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/vestigio.restauraciones/"
+    },
+    {
+      "label": "Facebook",
+      "href": "https://www.facebook.com/vestigio.restauraciones/"
+    },
+    {
+      "label": "Pinterest",
+      "href": "https://www.pinterest.com/vestigiorestauraciones/"
+    }
+  ],
+  "form": {
+    "namePlaceholder": "Tu nombre",
+    "emailPlaceholder": "Tu email",
+    "messagePlaceholder": "Tu mensaje",
+    "button": "Enviar"
+  }
+}
