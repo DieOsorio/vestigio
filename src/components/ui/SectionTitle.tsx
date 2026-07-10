@@ -11,7 +11,7 @@ export function SectionTitle({ eyebrow, title, description }: SectionTitleProps)
 
   return (
     <div className="max-w-2xl">
-      <p className="text-sm uppercase tracking-[0.3em] theme-accent">
+      <p className="text-md uppercase tracking-[0.3em] theme-accent">
         {eyebrow ?? t('defaultEyebrow')}
       </p>
       <h2 className="mt-3 text-3xl font-semibold theme-text sm:text-4xl">

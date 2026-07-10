@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -10,6 +11,8 @@
   --color-gold: #c8a068;
   --color-sand: #e6dcc6;
   --color-cream: #f5f2eb;
+  --color-white: #ffffff;
+  --color-mid: #8e7c56;
 }
 
 html {
@@ -26,6 +29,11 @@ body {
   background-position: center center, center center;
   background-size: 240px 240px, 240px 240px;
   color: var(--color-cream);
+}
+
+h1,
+h2 {
+  font-family: 'Cinzel', serif;
 }
 
 #root {

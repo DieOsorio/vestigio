@@ -25,7 +25,7 @@ export function Header() {
           />
         </a>
 
-        <nav className="hidden gap-6 text-sm md:flex">
+        <nav className="hidden gap-6 text-md md:flex">
           {links.map((link) => (
             <a key={link.href} href={link.href} className="theme-link transition">
               {t(`links.${link.key}`)}

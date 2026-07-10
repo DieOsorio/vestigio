@@ -39,29 +39,29 @@ export function ContactSection() {
           </div>
         </div>
 
-        <form className="theme-surface rounded-3xl p-8 shadow-2xl">
+        <form className="theme-surface rounded-sm p-8 shadow-2xl">
           <div className="grid gap-4 sm:grid-cols-2">
             <input
               type="text"
               placeholder={t('form.namePlaceholder')}
-              className="theme-input rounded-2xl px-4 py-3 outline-none ring-0"
+              className="theme-input rounded-sm px-4 py-3 outline-none ring-0"
             />
             <input
               type="email"
               placeholder={t('form.emailPlaceholder')}
-              className="theme-input rounded-2xl px-4 py-3 outline-none ring-0"
+              className="theme-input rounded-sm px-4 py-3 outline-none ring-0"
             />
           </div>
 
           <textarea
             rows={5}
             placeholder={t('form.messagePlaceholder')}
-            className="theme-input mt-4 w-full rounded-2xl px-4 py-3 outline-none ring-0"
+            className="theme-input mt-4 w-full rounded-sm px-4 py-3 outline-none ring-0"
           />
 
           <button
             type="button"
-            className="mt-6 rounded-full theme-button px-6 py-3 font-medium transition"
+            className="mt-6 rounded-sm cursor-pointer theme-button px-6 py-3 font-medium transition"
           >
             {t('form.button')}
           </button>

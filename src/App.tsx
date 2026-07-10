@@ -16,48 +16,57 @@ export default function App() {
   return (
     <div className="min-h-screen theme-shell">
       <div className="mx-auto flex max-w-7xl justify-end px-6 py-4">
-        <div
-          className="rounded-full border border-white/10 px-3 py-2 shadow-lg backdrop-blur"
-          style={{ backgroundColor: 'var(--color-forest)' }}
-        >
-          <details className="relative z-50">
-            <summary className="flex cursor-pointer list-none items-center gap-2 rounded-full px-3 py-2 text-sm text-slate-200">
-              <img
-                src={selectedLanguage.flag}
-                alt={selectedLanguage.label}
-                className="h-5 w-5 rounded-full object-cover"
-              />
-              <span>{selectedLanguage.label}</span>
-              <span className="text-xs text-slate-400">▾</span>
-            </summary>
+        <details className="relative" style={{ zIndex: 1000 }}>
+          <summary
+            className="flex cursor-pointer list-none items-center gap-2 rounded-full border px-3 py-2 text-sm transition"
+            style={{
+              backgroundColor: 'var(--color-forest)',
+              borderColor: 'var(--color-mid)',
+              color: 'var(--color-cream)',
+            }}
+          >
+            <img
+              src={selectedLanguage.flag}
+              alt={selectedLanguage.label}
+              className="h-5 w-5 rounded-full object-cover"
+            />
+            <span>{selectedLanguage.label}</span>
+            <span className="text-xs text-[var(--color-sand)]">▾</span>
+          </summary>
 
-            <div className="absolute right-0 z-50 mt-2 w-40 rounded-2xl border border-white/10 bg-slate-900/95 p-2 shadow-xl backdrop-blur">
-              {languages.map((language) => {
-                const isActive = language.code === currentLanguage
+          <div
+            className="absolute right-0 mt-2 w-44 rounded-sm border p-2 shadow-2xl backdrop-blur"
+            style={{
+              zIndex: 1050,
+              backgroundColor: 'rgba(47, 62, 52, 0.95)',
+              borderColor: 'var(--color-mid)',
+            }}
+          >
+            {languages.map((language) => {
+              const isActive = language.code === currentLanguage
 
-                return (
-                  <button
-                    key={language.code}
-                    type="button"
-                    onClick={() => void i18n.changeLanguage(language.code)}
-                    className={`flex w-full items-center gap-2 rounded-xl px-3 py-2 text-left text-sm transition ${
-                      isActive
-                        ? 'bg-white/10 text-white'
-                        : 'text-slate-300 hover:bg-white/10 hover:text-white'
-                    }`}
-                  >
-                    <img
-                      src={language.flag}
-                      alt={language.label}
-                      className="h-5 w-5 rounded-full object-cover"
-                    />
-                    <span>{language.label}</span>
-                  </button>
-                )
-              })}
-            </div>
-          </details>
-        </div>
+              return (
+                <button
+                  key={language.code}
+                  type="button"
+                  onClick={() => void i18n.changeLanguage(language.code)}
+                  className="flex w-full items-center gap-2 rounded-xl px-3 py-2 text-left text-sm transition"
+                  style={{
+                    backgroundColor: isActive ? 'rgba(200, 160, 104, 0.18)' : 'transparent',
+                    color: isActive ? 'var(--color-white)' : 'var(--color-cream)',
+                  }}
+                >
+                  <img
+                    src={language.flag}
+                    alt={language.label}
+                    className="h-5 w-5 rounded-full object-cover"
+                  />
+                  <span>{language.label}</span>
+                </button>
+              )
+            })}
+          </div>
+        </details>
       </div>
 
       <HomePage />

@@ -16,7 +16,7 @@ export function HeroSection() {
 
   return (
     <section id="inicio" className="mx-auto flex max-w-7xl flex-col items-center justify-center px-6 py-24 text-center sm:py-32">
-      <p className="text-sm uppercase tracking-[0.35em] theme-accent">
+      <p className="text-md uppercase tracking-[0.6em] theme-accent">
         {t('eyebrow')}
       </p>
 
@@ -24,13 +24,21 @@ export function HeroSection() {
         {t('title')}
       </h1>
 
+      <div className="mt-8 flex w-full justify-center">
+        <img
+          src={t('banner')}
+          alt="Vestigio Restauraciones"
+          className="w-full max-w-6xl rounded-sm border border-white/10 object-contain shadow-2xl"
+        />
+      </div>
+
       <p className="mt-6 max-w-2xl text-lg leading-8 theme-text-muted">
         {t('description')}
       </p>
 
       <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-        <Button href={primaryCta.href}>{primaryCta.label}</Button>
-        <Button href={secondaryCta.href} className="bg-transparent text-slate-200 hover:bg-white/10">
+        <Button className="border rounded-md min-w-[165px]" href={primaryCta.href}>{primaryCta.label}</Button>
+        <Button className="border rounded-md min-w-[165px]" href={secondaryCta.href}>
           {secondaryCta.label}
         </Button>
       </div>

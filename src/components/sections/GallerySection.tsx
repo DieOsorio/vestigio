@@ -18,9 +18,9 @@ export function GallerySection() {
         {items.map((item) => (
           <article
             key={item.title}
-            className="overflow-hidden rounded-3xl border border-white/10 bg-slate-900/80 shadow-xl"
+            className="overflow-hidden rounded-sm border border-white/10 bg-slate-900/80 shadow-xl"          
           >
-            <div className="flex h-64 items-center justify-center overflow-hidden rounded-t-3xl bg-slate-800/70 p-4">
+            <div className="flex h-64 items-center justify-center overflow-hidden rounded-t-sm bg-slate-800/60 p-4">
               <img
                 src={item.image}
                 alt={item.title}
